@@ -4,8 +4,8 @@ from shutil import move
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
-src_folder = "/Users/Fredrick/Downloads"
-dest_folder = "/Users/Fredrick/Downloads/Documents"
+src_folder = "/Users/Fredrick/Downloads/Documents"
+dest_folder = "/Users/Fredrick/Downloads"
 
 class DocumentMoverHandler(FileSystemEventHandler):
     def move_existing_files(self):
