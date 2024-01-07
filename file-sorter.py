@@ -4,7 +4,7 @@ from shutil import move
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
-src_folder = os.path.join(os.path.expanduser('~'), 'Downloads\Documents')
+src_folder = os.path.join(os.path.expanduser('~'), 'Downloads/Documents')
 dest_folder = os.path.join(os.path.expanduser('~'), 'Downloads')
 
 #Destination folder validation
