@@ -4,8 +4,8 @@ from shutil import move
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
-src_folder = "C:\\Users\\Fredrick\\Downloads"
-dest_folder = "C:\\Users\\Fredrick\\Downloads\\Documents"
+src_folder = os.path.join(os.path.expanduser('~'), 'Downloads\Documents')
+dest_folder = os.path.join(os.path.expanduser('~'), 'Downloads')
 
 #Destination folder validation
 if not os.path.exists(dest_folder):
